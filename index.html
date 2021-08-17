@@ -16,16 +16,16 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a class="nav-button" href="#about-me">About</a></li>
+                <li><a class="nav-button" href="#projects">Projects</a></li>
+                <li><a class="nav-button" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="about-me" class ="about-me">
             <div class="image-wrapper">
-                <img src="images/selfie.jpeg" alt="">
+                <img class="selfie" src="images/selfie.jpeg" alt="">
             </div>
             <h1>Hi! I'm Marcus, a programmer!</h1>
             <p>My focus is primaryly on frontend web development.</p>
@@ -37,10 +37,30 @@
         <section id="projects" class="projects-section">
             <h2 class="projects-header">Projects</h2>
             <div class="projects-container">
-                <div class="proj proj-one"></div>
-                <div class="proj proj-two"></div>
-                <div class="proj proj-three"></div>
-                <div class="proj proj-four"></div>
+
+                <div class="proj proj-one">
+                    <img class="screenshot" src="images/screenshot.png" alt="">
+                    <p>Frontend Mentor Challenge built with html, css, flexbox, grid, and sass</p>
+                    <div class="links">
+                        <a class="button" href="https://marcus-hugo.github.io/order-summary-component-main/" target="_blank">Live Site</a> 
+                        <a class="button" href="https://github.com/marcus-hugo/order-summary-component-main" target="_blank">Code</a>
+                    </div>
+                </div>
+
+                <div class="proj proj-two">
+                    <div class="links">
+                        <a class="button" href="" target="_blank">Live Site</a> 
+                        <a class="button" href="" target="_blank">Code</a>
+                    </div>
+                </div>
+                <div class="proj proj-three">
+                    <a class="button" href="" target="_blank">Live Site</a> 
+                    <a class="button" href="" target="_blank">Code</a>
+                </div>
+                <div class="proj proj-four">
+                    <a class="button" href="" target="_blank">Live Site</a> 
+                    <a class="button" href="" target="_blank">Code</a>
+                </div>
             </div>
             </section>
         </section>

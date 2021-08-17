@@ -26,10 +26,6 @@ header {
 }
 
 /* Navbar */
-
-nav {
-    
-}
 ul {
     display: flex;
     justify-content: space-evenly;
@@ -39,12 +35,12 @@ li {
     list-style: none;
 }
 
-a {
+.nav-button {
     text-decoration: none;
     color: lavender;
 }
 
-a:hover {
+.nav-button:hover {
     color: lightcoral;
 }
 
@@ -67,7 +63,7 @@ a:hover {
     border-radius: 20%;
 }
 
-img {
+.selfie {
     width: 220px;
     height: 220px;
     border-radius: 20%;
@@ -88,7 +84,6 @@ p {
 /* Projects Section */
 .projects-section {
     background-color: lavender;
-    color: lightcoral;
     height: 100vh;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -101,6 +96,7 @@ p {
     align-self:center;
     transform:rotate(-90deg);
     font-size: 5em;
+    color:lightcoral;
 }
 
 .projects-container {
@@ -112,10 +108,30 @@ p {
 }
 
 .proj {
-    width: 200px;
-    height: 200px;
-    background-color: cornflowerblue;
-    border: 3px solid lavender;
+    width: 80%;
+    height: 100%;
+    background-color: ;
+    border: 3px solid lightcoral;
+    border-radius: 8px;
+    margin: 20px;
+    color: cornflowerblue;
+}
+
+.screenshot {
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 15px;
+}
+
+.button {
+    display: inline-block;
+    width: 5.5em;
+    height: 1.5em;
+    border: 1px solid lightcoral;
+    background-color:lavender;
+    text-decoration: none;
+    color: lightcoral;
+    margin: 10px;
 }
 
 /* Get in Touch Section */
