@@ -105,6 +105,7 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 20px 0 40px 0;
 }
 
 .project {
@@ -120,6 +121,7 @@ p {
 .project:hover {
     background: cornflowerblue;
     color: lavender;
+    filter: drop-shadow(2px 2px 2px cornflowerblue);
 }
 
 .screenshot {
@@ -143,6 +145,7 @@ p {
 .button:hover {
     background: lightcoral;
     color: lavender;
+    filter:drop-shadow(3px 2px 1px linear-gradient(lightcoral, cornflowerblue))
 }
 
 /* Contact Section */
@@ -159,6 +162,13 @@ h3 {
     font-size: 3em;
 }
 
+.social-icons-link {
+    text-decoration: none;
+}
+
+.fab, .fas, .fr-mentor {
+    color: lavender;
+}
 /* Footer */
 footer {
     background-color: cornflowerblue;
