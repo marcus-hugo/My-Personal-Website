@@ -111,7 +111,6 @@ p {
 .project {
     width: 80%;
     height: auto;
-    background-color: ;
     border: 3px solid lightcoral;
     border-radius: 8px;
     color: cornflowerblue;
@@ -119,9 +118,9 @@ p {
 }
 
 .project:hover {
-    background: cornflowerblue;
+    background: linear-gradient( lavender, cornflowerblue);
     color: lavender;
-    filter: drop-shadow(2px 2px 2px cornflowerblue);
+    filter: drop-shadow(2px 2px 2px dimgrey);
 }
 
 .screenshot {
@@ -143,9 +142,14 @@ p {
 }
 
 .button:hover {
-    background: lightcoral;
+    background: linear-gradient( cornflowerblue, lightcoral);
     color: lavender;
-    filter:drop-shadow(3px 2px 1px linear-gradient(lightcoral, cornflowerblue))
+    filter: drop-shadow(2px 2px 2px dimgrey);
+}
+
+.frm-link {
+    text-decoration: none;
+    color: lightcoral;
 }
 
 /* Contact Section */
@@ -166,7 +170,7 @@ h3 {
     text-decoration: none;
 }
 
-.fab, .fas, .fr-mentor {
+.fab, .fas {
     color: lavender;
 }
 /* Footer */
@@ -179,5 +183,9 @@ footer {
 @media (min-width: 1024px) {
     body {
         font-size: 20px;
+    }
+
+    .projects-header {
+        transform:rotate(-10deg);
     }
 }
