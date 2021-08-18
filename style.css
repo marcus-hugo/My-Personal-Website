@@ -20,7 +20,7 @@ header {
     padding-top: 15px;
     padding-bottom: 15px;
     position: sticky;
-    top: 2px;
+    top: 0px;
     z-index: 1;
     border-bottom: 1px solid lavender;
 }
@@ -44,8 +44,8 @@ li {
     color: lightcoral;
 }
 
-/* About Me Section */
-.about-me {
+/* About Section */
+.about-section{
     background: linear-gradient(cornflowerblue, lightcoral) ;
     height: 100vh;
     border-bottom: 2px solid lavender;
@@ -84,11 +84,11 @@ p {
 /* Projects Section */
 .projects-section {
     background-color: lavender;
-    height: 100vh;
+    height: auto;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
-    overflow: hidden;
+    overflow: ;
 }
 
 .projects-header {
@@ -103,18 +103,23 @@ p {
     grid-area: 1/2/2/3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.proj {
+.project {
     width: 80%;
-    height: 100%;
+    height: auto;
     background-color: ;
     border: 3px solid lightcoral;
     border-radius: 8px;
-    margin: 20px;
     color: cornflowerblue;
+    margin: 2px;
+}
+
+.project:hover {
+    background: cornflowerblue;
+    color: lavender;
 }
 
 .screenshot {
@@ -128,18 +133,41 @@ p {
     width: 5.5em;
     height: 1.5em;
     border: 1px solid lightcoral;
+    border-radius: 5px;
     background-color:lavender;
     text-decoration: none;
     color: lightcoral;
     margin: 10px;
 }
 
-/* Get in Touch Section */
-.contact {
-   height: 100vh;
-   background: linear-gradient(lightcoral, cornflowerblue);
+.button:hover {
+    background: lightcoral;
+    color: lavender;
 }
 
+/* Contact Section */
+.contact-section {
+   height: 100vh;
+   background: linear-gradient(lightcoral, cornflowerblue);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+h3 {
+    padding-top: 30px;
+    font-size: 3em;
+}
+
+/* Footer */
 footer {
     background-color: cornflowerblue;
+}
+
+
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
 }
