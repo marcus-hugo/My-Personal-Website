@@ -13,6 +13,10 @@ body {
     font-family: 'Audiowide', cursive;
     background-color: cornflowerblue;
 }
+/* Drop shadow for text */
+h1, h2, h3, p, .nav-button, footer {
+    filter: drop-shadow(1px 1px 0px dimgrey);
+}
 
 /* Header */
 header {
@@ -38,15 +42,35 @@ li {
 .nav-button {
     text-decoration: none;
     color: lavender;
+    filter: drop-shadow(1px 1px 0px dimgrey);
 }
 
 .nav-button:hover {
     color: lightcoral;
 }
 
+/* Side Menu */
+.side-menu {
+    border: 1px solid pink;
+    background-color: lightcoral;
+    border-radius: 5px;
+    transform: rotate(-10deg);
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    z-index: 1;
+  }
+  .side-nav-button {
+    text-decoration: none;
+    color: lavender;
+    filter: drop-shadow(1px 1px 0px dimgrey);
+    font-size: 1em;
+  }
+
 /* About Section */
 .about-section{
-    background: linear-gradient(cornflowerblue, lightcoral) ;
+    background: linear-gradient(cornflowerblue, lightcoral);
     height: 100vh;
     border-bottom: 2px solid lavender;
     display: flex;
@@ -67,9 +91,8 @@ li {
     width: 220px;
     height: 220px;
     border-radius: 20%;
-    border:;
-    filter:grayscale() drop-shadow(2px 5px 1px lavender);
     mix-blend-mode: multiply;
+    filter:grayscale() drop-shadow(2px 2px 2px dimgrey);
 }
 
 h1 {
@@ -88,15 +111,22 @@ p {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
-    overflow: ;
 }
 
-.projects-header {
+.header2-wrapper {
     grid-area: 1/1/2/2;
-    align-self:center;
-    transform:rotate(-90deg);
-    font-size: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h2 {
+    transform:rotate(-10deg);
+    font-size: ;
     color:lightcoral;
+    position: relative;
+    top: 40px;
 }
 
 .projects-container {
@@ -180,12 +210,21 @@ footer {
 
 
 
+
 @media (min-width: 1024px) {
     body {
         font-size: 20px;
     }
-
-    .projects-header {
-        transform:rotate(-10deg);
+    header {
+        display: none;
+    }
+    .side-menu {
+        display: inline-block;
+    }
+    h2 {
+        transform: rotate(-90deg);
+        left: 175px;
+        top: 200px;
+        margin: 0 60px 0 60px;
     }
 }
