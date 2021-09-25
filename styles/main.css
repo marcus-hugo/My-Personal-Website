@@ -13,7 +13,7 @@ body {
     text-align: center;
     color:lavender;
     min-width: 375px;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Roboto', sans-serif;
     background-color: cornflowerblue;
 }
 
@@ -22,7 +22,7 @@ p {
 }
 
 /* Drop shadow for text */
-h1, h2, h3, p, .nav-button, footer {
+h1, h2, h3, .nav-button, footer {
     filter: drop-shadow(1px 1px 0px dimgrey);
 }
 
@@ -38,12 +38,12 @@ header {
 }
 
 /* Navbar */
-ul {
+.u-list {
     display: flex;
     justify-content: space-evenly;
 }
 
-li {
+.l-item {
     list-style: none;
 }
 
@@ -57,27 +57,8 @@ li {
     color: lightcoral;
 }
 
-/* Side Menu */
-.side-menu {
-    border: 1px solid pink;
-    background-color: lightcoral;
-    border-radius: 5px;
-    transform: rotate(-10deg);
-    display: none;
-    position: fixed;
-    top: 100px;
-    left: 20px;
-    z-index: 1;
-  }
-  .side-nav-button {
-    text-decoration: none;
-    color: lavender;
-    filter: drop-shadow(1px 1px 0px dimgrey);
-    font-size: 1rem;
-  }
-
 /* About Section */
-.about-section{
+.about-section {
     background: linear-gradient(cornflowerblue, lightcoral);
     height: 100vh;
     border-bottom: 2px solid lavender;
@@ -113,7 +94,7 @@ h1 {
 
 /* Projects Section */
 .projects-section {
-    background-color: lavender;
+    background: lavender;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -121,26 +102,29 @@ h1 {
     align-items: center;
 }
 
-h2 {
-    transform:rotate(-10deg);
+.projects-header {
     color:lightcoral;
-    margin: 6.25rem 0 2.5rem 0;
+    padding: 40px 0 20px 0;
+}
+.fem-header {
+    color:lightcoral;
+    padding: 10px 0 10px 0;
 }
 
 .project {
     width: 80%;
     height: auto;
-    border: 3px solid lightcoral;
-    border-radius: 8px;
-    color: cornflowerblue;
+    border: 2px solid lightcoral;
+    border-radius: 5px;
+    color: lightcoral;
     margin: 0.3rem;
 }
 
-.project:hover {
+/* .project:hover {
     background: linear-gradient( lavender, cornflowerblue);
     color: lavender;
     filter: drop-shadow(2px 2px 2px dimgrey);
-}
+} */
 
 .screenshot {
     max-width: 50%;
@@ -165,26 +149,28 @@ h2 {
     color: lavender;
     filter: drop-shadow(2px 2px 2px dimgrey);
 }
-
-.more-projects{
-    margin: 2.5rem 0;
+.more-projects {
+    margin-bottom: 2rem;
 }
-
 .frm-link {
     text-decoration: none;
     color: lightcoral;
 }
+.frm-link:hover {
+    color: lavender;
+    background: linear-gradient( cornflowerblue, lightcoral);
+}
 
 /* Contact Section */
 .contact-section {
-   height: 100vh;
+   height: auto;
    background: linear-gradient(lightcoral, cornflowerblue);
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
 }
 
-h3 {
+.get-in-touch {
     padding-top: 1.9rem;
     font-size: 3rem;
     margin: 6.25rem 1.25rem 0 1.25rem;
@@ -206,9 +192,30 @@ h3 {
 .fab, .fas {
     color: lavender;
 }
+
+.about-site {
+    border: 2px solid lavender;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+.about-h3-wrapper {
+    border-bottom: 2px solid lavender;
+    width: 100%;
+}
+
+.about-site-ul {
+    padding: 2rem;
+}
+
+
 /* Footer */
 footer {
     background-color: cornflowerblue;
+    font-size: 12px;
+    padding: 20px;
 }
 
 
@@ -218,11 +225,16 @@ footer {
     html {
         font-size: 20px;
     }
-    header {
-        display: none;
+
+    
+    .image-wrapper {
+        width: auto;
+        height: auto;
     }
-    .side-menu {
-        display: inline-block;
+
+    .selfie {
+        width: auto;
+        height: auto;
     }
 
     /* Projects Section */
@@ -234,10 +246,6 @@ footer {
     
     .header2-wrapper {
         grid-area: 1/2/2/4;
-    }
-
-    h2 {
-        transform: rotate(0deg);
     }
 
     .project {
@@ -270,9 +278,5 @@ footer {
         grid-area: 4/2/5/4;
         justify-self: center;
        
-    }
-
-    .contact-section {
-        
     }
 }
