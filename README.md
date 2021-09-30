@@ -1,6 +1,6 @@
 # My Personal Site
 
-Using most everything I've learned about frontend web development, including Flexbox, Grid, responsive layouts, and using REMs.
+Built using most everything I've learned about frontend web development, including Flexbox, Grid, responsive layouts, and using REMs.
 
 ## Future Development
 
