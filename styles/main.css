@@ -64,7 +64,7 @@ header {
     border-bottom: 2px solid lavender;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -225,11 +225,10 @@ footer {
     html {
         font-size: 20px;
     }
-
     
     .image-wrapper {
-        width: auto;
-        height: auto;
+        width: 320px;
+        height: 320px;
     }
 
     .selfie {
