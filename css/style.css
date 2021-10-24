@@ -17,9 +17,6 @@ body {
     background-color: cornflowerblue;
 }
 
-p {
-    margin: 1.25rem 1.25rem;
-}
 
 /* Drop shadow for text */
 h1, h2, h3, .nav-button, footer {
@@ -45,6 +42,12 @@ header {
 
 .l-item {
     list-style: none;
+    transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.l-item:hover{
+    transform: scale(1.10);
+    transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .nav-button {
@@ -54,7 +57,7 @@ header {
 }
 
 .nav-button:hover {
-    color: lightcoral;
+    
 }
 
 /* About Section */
@@ -68,29 +71,40 @@ header {
     align-items: center;
 }
 
-.image-wrapper {
-    background-color: lavender;
-    width: 220px;
-    height: 220px;
-    display: inline-block;
-    border-radius: 20%;
-    margin: 6.25rem 0 2.5rem 0;
+.selfie {
+    width: 80%;
+    border-radius: 50%;
+    border: 3px solid;
+    transform: rotate(-5deg);
+    transition: all 1s ease-out;
 }
 
-.selfie {
-    width: 220px;
-    height: 220px;
-    border-radius: 20%;
-    mix-blend-mode: multiply;
-    filter:grayscale() drop-shadow(2px 2px 2px dimgrey);
+.selfie:hover {
+    transform: scale(1.25) translate(0, 20px) rotate(5deg);
+    transition: all 1s ease-out;
 }
+
+
 
 h1 {
    margin: 2.5rem 1.25rem;
    font-size: 3rem;
+   transition: all 1s ease-out;
+}
+h1:hover {
+    transform: translate(5px) scale(1.1);
+    transition: all 1s ease-in-out;
 }
 
+p {
+    margin: 1.25rem 1.25rem;
+    transition: all 1s ease-out;
+}
 
+p:hover {
+    transform: translate(-5px) scale(1.1);
+    transition: all 1s ease-in-out;
+}
 
 /* Projects Section */
 .projects-section {
@@ -98,7 +112,6 @@ h1 {
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-self: center;
     align-items: center;
 }
 
@@ -106,6 +119,7 @@ h1 {
     color:lightcoral;
     padding: 40px 0 20px 0;
 }
+
 .fem-header {
     color:lightcoral;
     padding: 10px 0 10px 0;
@@ -117,14 +131,8 @@ h1 {
     border: 2px solid lightcoral;
     border-radius: 5px;
     color: lightcoral;
-    margin: 0.3rem;
+    /* margin: 0.3rem; */
 }
-
-/* .project:hover {
-    background: linear-gradient( lavender, cornflowerblue);
-    color: lavender;
-    filter: drop-shadow(2px 2px 2px dimgrey);
-} */
 
 .screenshot {
     max-width: 50%;
@@ -142,23 +150,21 @@ h1 {
     text-decoration: none;
     color: lightcoral;
     margin: 0.6rem;
+    transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .button:hover {
-    background: linear-gradient( cornflowerblue, lightcoral);
-    color: lavender;
-    filter: drop-shadow(2px 2px 2px dimgrey);
+    transform: scale(1.10);
+    transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
 .more-projects {
     margin-bottom: 2rem;
 }
+
 .frm-link {
     text-decoration: none;
     color: lightcoral;
-}
-.frm-link:hover {
-    color: lavender;
-    background: linear-gradient( cornflowerblue, lightcoral);
 }
 
 /* Contact Section */
@@ -193,6 +199,11 @@ h1 {
     color: lavender;
 }
 
+.fab:hover, .fas:hover {
+    transform: scale(1.10);
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
 .about-site {
     border: 2px solid lavender;
     display: flex;
@@ -210,7 +221,6 @@ h1 {
     padding: 2rem;
 }
 
-
 /* Footer */
 footer {
     background-color: cornflowerblue;
@@ -218,41 +228,56 @@ footer {
     padding: 20px;
 }
 
-
-
+/* Desktop Layout */
 
 @media (min-width: 1024px) {
     html {
         font-size: 20px;
     }
     
-    .image-wrapper {
-        width: 320px;
-        height: 320px;
-    }
-
     .selfie {
         width: auto;
         height: auto;
     }
 
+    /* About Section */
+
+    .about-section {
+        flex-direction: row;
+    }
+
+    .my-words {
+        width: 35%;
+    }
+    
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        width: 35%;
+        margin: 1.25rem auto;
+        font-size: 1.75rem;
+    }
+
     /* Projects Section */
     .projects-section {
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        align-items: normal;
     }
-    
-    .header2-wrapper {
-        grid-area: 1/2/2/4;
+
+    .project-p {
+        width: 100%;
     }
 
     .project {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: auto;
+        width: 100%;
+    }
+
+    .header2-wrapper {
+        grid-area: 1/2/2/4;
     }
 
     .project-one{
