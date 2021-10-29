@@ -12,15 +12,8 @@ html {
 body {
     text-align: center;
     color:lavender;
-    min-width: 375px;
     font-family: 'Roboto', sans-serif;
     background-color: cornflowerblue;
-}
-
-
-/* Drop shadow for text */
-h1, h2, h3, .nav-button, footer {
-    filter: drop-shadow(1px 1px 0px dimgrey);
 }
 
 /* Header */
@@ -63,16 +56,27 @@ header {
 /* About Section */
 .about-section {
     background: linear-gradient(cornflowerblue, lightcoral);
-    height: 100vh;
     border-bottom: 2px solid lavender;
+}
+
+.about-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    border: 2px solid;
+    border-radius: 20px;
+    margin: 7rem 2rem;
+    padding: 1rem;
+}
+
+.image-wrapper {
+    margin: 5rem 0 2rem 0;
 }
 
 .selfie {
     width: 80%;
+    max-width: 332px;
     border-radius: 50%;
     border: 3px solid;
     transform: rotate(-5deg);
@@ -80,11 +84,9 @@ header {
 }
 
 .selfie:hover {
-    transform: scale(1.25) translate(0, 20px) rotate(5deg);
+    transform: scale(1.10) translate(0, 20px) rotate(5deg);
     transition: all 1s ease-out;
 }
-
-
 
 h1 {
    margin: 2.5rem 1.25rem;
@@ -113,6 +115,7 @@ p:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: .5rem;
 }
 
 .projects-header {
@@ -131,13 +134,26 @@ p:hover {
     border: 2px solid lightcoral;
     border-radius: 5px;
     color: lightcoral;
-    /* margin: 0.3rem; */
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .screenshot {
     max-width: 50%;
     max-height: 50%;
     margin-top: 1rem;
+}
+
+.project-p {
+transition: none;
+}
+
+.project-p:hover {
+    transform: none;
+transition: none;
 }
 
 .button {
@@ -165,6 +181,12 @@ p:hover {
 .frm-link {
     text-decoration: none;
     color: lightcoral;
+    transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.frm-link:hover {
+    transform: scale(1.10);
+    transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 /* Contact Section */
@@ -235,6 +257,11 @@ footer {
         font-size: 20px;
     }
     
+    .image-wrapper {
+        place-self: center;
+        margin-right: 5rem;
+    }
+
     .selfie {
         width: auto;
         height: auto;
@@ -243,19 +270,25 @@ footer {
     /* About Section */
 
     .about-section {
+        
+    }
+
+    
+    .about-wrapper {
+        display: flex;
         flex-direction: row;
     }
 
     .my-words {
-       
+       max-width: 700px;
     }
 
     h1 {
         font-size: 4rem;
+        margin-bottom: 4rem;
     }
 
     p {
-        width: 35%;
         margin: 1.25rem auto;
         font-size: 1.75rem;
     }
