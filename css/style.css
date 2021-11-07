@@ -18,13 +18,13 @@ body {
 
 /* Header */
 header {
-    background-color: cornflowerblue;
+    background: hsla(219, 79%, 66%, .90);
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: sticky;
     top: 0px;
     z-index: 1;
-    border-bottom: 1px solid lavender;
+    box-shadow: 0px 1px 10px black;
 }
 
 /* Navbar */
@@ -47,10 +47,6 @@ header {
     text-decoration: none;
     color: lavender;
     filter: drop-shadow(1px 1px 0px dimgrey);
-}
-
-.nav-button:hover {
-    
 }
 
 /* About Section */
@@ -246,11 +242,13 @@ transition: none;
 
 .about-site {
     border: 2px solid lavender;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 2rem auto;
+    padding: 1rem;
 }
 .about-h3-wrapper {
     border-bottom: 2px solid lavender;
@@ -287,11 +285,12 @@ footer {
 
     /* About Section */
 
-    .about-section {
-        
+    .u-list {
+        justify-content: flex-start;
+        gap: 2rem;
+        padding-left: .5rem;
     }
 
-    
     .about-wrapper {
         display: flex;
         flex-direction: row;
@@ -362,5 +361,8 @@ footer {
         grid-area: 4/2/5/4;
         justify-self: center;
        
+    }
+    footer p {
+        font-size: .8rem;
     }
 }
