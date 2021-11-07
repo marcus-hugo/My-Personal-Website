@@ -79,13 +79,32 @@ header {
     max-width: 332px;
     border-radius: 50%;
     border: 3px solid;
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
     transition: all 1s ease-out;
 }
 
 .selfie:hover {
-    transform: scale(1.10) translate(0, 20px) rotate(5deg);
+    transform: scale(1.02) translate(10px, 0px) rotate(1deg);
     transition: all 1s ease-out;
+}
+/* Bubble */
+.my-words {
+    background-color: black;
+    position: relative;
+    border-radius: 83px;
+    padding: 1rem;
+    opacity: 50%;
+}
+/* bubble arrow */
+.my-words::before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 47px solid transparent;
+    border-bottom-color: black;
+    left: 50px;
+    top: -85px;
 }
 
 h1 {
@@ -94,7 +113,7 @@ h1 {
    transition: all 1s ease-out;
 }
 h1:hover {
-    transform: translate(5px) scale(1.1);
+    transform: translate(5px) scale(1.03);
     transition: all 1s ease-in-out;
 }
 
@@ -104,7 +123,7 @@ p {
 }
 
 p:hover {
-    transform: translate(-5px) scale(1.1);
+    transform: translate(-5px) scale(1.03);
     transition: all 1s ease-in-out;
 }
 
@@ -279,8 +298,17 @@ footer {
         flex-direction: row;
     }
 
+    /* bubble triangle */
+
     .my-words {
-       max-width: 700px;
+        max-width: 700px;
+    }
+
+    .my-words::before {
+        border-bottom-color: transparent;
+        border-right-color: black;
+        left: -93px;
+        top: 251px;
     }
 
     h1 {
