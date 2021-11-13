@@ -1,4 +1,7 @@
 
+:root {
+
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +21,7 @@ body {
 
 /* Header */
 header {
-    background: hsla(219, 79%, 66%, .90);
+    background: #0CF2DB;
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: sticky;
@@ -41,18 +44,21 @@ header {
 .l-item:hover{
     transform: scale(1.10);
     transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: yellow;
+    box-shadow: 2px 2px black;
 }
 
 .nav-button {
     text-decoration: none;
-    color: lavender;
-    filter: drop-shadow(1px 1px 0px dimgrey);
+    text-transform: uppercase;
+    color: #18104b;
 }
 
 /* About Section */
 .about-section {
-    background: linear-gradient(cornflowerblue, lightcoral);
-    border-bottom: 2px solid lavender;
+    background-image: linear-gradient(90deg, rgb(212, 102, 229) 2px, transparent), 
+    linear-gradient(rgb(212, 102, 229) 2px, transparent);
+    background-size: 50px 50px;
 }
 
 .about-wrapper {
@@ -61,12 +67,11 @@ header {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 20px;
-    margin: 7rem 2rem;
     padding: 1rem;
 }
 
 .image-wrapper {
-    margin: 5rem 0 2rem 0;
+    margin: 1rem;
 }
 
 .selfie {
@@ -206,7 +211,8 @@ transition: none;
 /* Contact Section */
 .contact-section {
    height: auto;
-   background: linear-gradient(lightcoral, cornflowerblue);
+   background-image: linear-gradient(90deg, rgb(212, 102, 229) 2px, transparent), linear-gradient(rgb(212, 102, 229) 2px, transparent);
+   background-size: 50px 50px;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
@@ -261,7 +267,7 @@ transition: none;
 
 /* Footer */
 footer {
-    background-color: cornflowerblue;
+    background-color: #0CF2DB;
     font-size: 12px;
     padding: 20px;
 }
