@@ -17,11 +17,12 @@ body {
     color:lavender;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(139,173,223);
+    overflow-x: hidden;
 }
 
 /* Header */
 header {
-    background: #0CF2DB;
+    background: linear-gradient(90deg, #0CF2DB, transparent);
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: sticky;
@@ -56,9 +57,10 @@ header {
 
 /* About Section */
 .about-section {
-    background-image: linear-gradient(90deg, rgb(212, 102, 229) 2px, transparent), 
-    linear-gradient(rgb(212, 102, 229) 2px, transparent);
-    background-size: 50px 50px;
+    background: black;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
 }
 
 .about-wrapper {
@@ -68,10 +70,59 @@ header {
     align-items: center;
     border-radius: 20px;
     padding: 1rem;
+
+    width: 100%;
+    height: 400px;
+  
+    background-image: 
+    radial-gradient(5px 5px at 10px 20px, white, transparent),
+    radial-gradient(2px 2px at 50px 370px, white, transparent),
+    radial-gradient(3px 3px at 50px 260px, white, transparent),
+      
+    radial-gradient(2px 2px at 20px 40px, white, transparent),
+    radial-gradient(4px 4px at 80px 45px, white, transparent),
+    radial-gradient(3px 3px at 70px 140px, white, transparent),
+    
+    radial-gradient(2px 2px at 280px 240px, white, transparent),
+    radial-gradient(4px 4px at 290px 260px, white, transparent),
+    radial-gradient(3px 3px at 270px 100px, white, transparent),
+    
+    radial-gradient(2px 2px at 380px 40px, white, transparent),
+    radial-gradient(4px 4px at 390px 60px, white, transparent),
+    radial-gradient(3px 3px at 370px 100px, white, transparent);
+      
+    background-repeat:repeat;
+    background-size: 400px 400px;
+
+    z-index: 0;
+    position: relative;
+    top: 65px;
+}
+
+.land {
+    width: 200%;
+    height: 400px;
+    margin: 0 auto;
+    background-color: black;
+
+    /* grid */
+    background-image: linear-gradient(90deg, rgba(212,102,229,1) 2px, transparent 0px),
+      linear-gradient(rgba(212,102,229,1) 2px, transparent 1%);
+    background-size: 50px 50px;
+
+    /* perspective */
+    transform: perspective(100px) rotateX(20deg);
+
+    position: absolute;
+    z-index: 1;
+    top:229px;
 }
 
 .image-wrapper {
+    position: relative;
+    z-index: 1;
     margin: 1rem;
+    padding-top: 158px;
 }
 
 .selfie {
@@ -89,11 +140,11 @@ header {
 }
 /* Bubble */
 .my-words {
-    background-color: black;
+    background-color: rgba(0,0,0,0.5);
     position: relative;
-    border-radius: 83px;
     padding: 1rem;
-    opacity: 50%;
+    z-index: 1;
+    border: 2px solid #0CF2DB;
 }
 /* bubble arrow */
 .my-words::before {
@@ -102,7 +153,7 @@ header {
     height: 0;
     content: '';
     border: 47px solid transparent;
-    border-bottom-color: black;
+    border-bottom-color: #0CF2DB;
     left: 50px;
     top: -85px;
 }
@@ -267,7 +318,7 @@ transition: none;
 
 /* Footer */
 footer {
-    background-color: #0CF2DB;
+    background: linear-gradient( transparent, #0CF2DB);
     font-size: 12px;
     padding: 20px;
 }
@@ -310,8 +361,8 @@ footer {
 
     .my-words::before {
         border-bottom-color: transparent;
-        border-right-color: black;
-        left: -93px;
+        border-right-color: #0CF2DB;
+        left: -94px;
         top: 251px;
     }
 
