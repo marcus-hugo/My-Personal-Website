@@ -9,7 +9,11 @@
 }
 
 html {
+   
     font-size: 16px; /* 16px = 1rem */
+}
+html, body {
+    overflow-x: hidden;
 }
 
 body {
@@ -17,7 +21,6 @@ body {
     color:lavender;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(139,173,223);
-    overflow-x: hidden;
 }
 
 /* Header */
