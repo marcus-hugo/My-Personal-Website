@@ -16,7 +16,7 @@ body {
     text-align: center;
     color:lavender;
     font-family: 'Roboto', sans-serif;
-    background-color: cornflowerblue;
+    background-color: rgb(139,173,223);
 }
 
 /* Header */
@@ -44,7 +44,7 @@ header {
 .l-item:hover{
     transform: scale(1.10);
     transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    background: yellow;
+    background: #FEE440;
     box-shadow: 2px 2px black;
 }
 
