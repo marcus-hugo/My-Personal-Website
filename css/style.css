@@ -9,8 +9,8 @@
 }
 
 html {
-   
     font-size: 16px; /* 16px = 1rem */
+    scroll-behavior: smooth;
 }
 html, body {
     overflow-x: hidden;
@@ -108,12 +108,12 @@ header {
     margin: 0 auto;
     background-color: black;
 
-    /* grid */
+    /* grid image */
     background-image: linear-gradient(90deg, rgba(212,102,229,1) 2px, transparent 0px),
       linear-gradient(rgba(212,102,229,1) 2px, transparent 1%);
     background-size: 50px 50px;
 
-    /* perspective */
+    /* perspective for grid */
     transform: perspective(100px) rotateX(20deg);
 
     position: absolute;
@@ -141,6 +141,7 @@ header {
     transform: scale(1.02) translate(10px, 0px) rotate(1deg);
     transition: all 1s ease-out;
 }
+
 /* Bubble */
 .my-words {
     background-color: rgba(0,0,0,0.5);
@@ -148,6 +149,7 @@ header {
     padding: 1rem;
     z-index: 1;
     border: 2px solid #0CF2DB;
+    border-radius: 5px;
 }
 /* bubble arrow */
 .my-words::before {
@@ -184,6 +186,7 @@ p:hover {
 /* Projects Section */
 .projects-section {
     background: lavender;
+    color: black;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -192,22 +195,26 @@ p:hover {
 }
 
 .projects-header {
-    color:lightcoral;
+    color:;
     padding: 40px 0 20px 0;
+    font-size: 4rem;
+    letter-spacing: .2rem;
 }
 
 .fem-header {
-    color:lightcoral;
+    color:;
     padding: 10px 0 10px 0;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .project {
     width: 80%;
     height: auto;
-    border: 2px solid lightcoral;
+    border: 2px solid;
     border-radius: 5px;
-    color: lightcoral;
-   
+    background-color: rgb(255, 255, 255);
+    color: ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -226,18 +233,18 @@ transition: none;
 
 .project-p:hover {
     transform: none;
-transition: none;
+    transition: none;
 }
 
 .button {
     display: inline-block;
     width: 5.5rem;
     height: 1.5rem;
-    border: 1px solid lightcoral;
+    border: 1px solid;
     border-radius: 5px;
-    background-color:lavender;
+    background-color:;
     text-decoration: none;
-    color: lightcoral;
+    color: black;
     margin: 0.6rem;
     transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -253,7 +260,7 @@ transition: none;
 
 .frm-link {
     text-decoration: none;
-    color: lightcoral;
+    color: black;
     transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -271,7 +278,11 @@ transition: none;
    flex-direction: column;
    justify-content: flex-start;
 }
-
+.get-in-touch-wrapper {
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+}
 .get-in-touch {
     padding-top: 1.9rem;
     font-size: 3rem;
@@ -301,7 +312,7 @@ transition: none;
 }
 
 .about-site {
-    border: 2px solid lavender;
+    background: black;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -317,6 +328,7 @@ transition: none;
 
 .about-site-ul {
     padding: 2rem;
+    text-align: left;
 }
 
 /* Footer */
@@ -376,7 +388,7 @@ footer {
 
     p {
         margin: 1.25rem auto;
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
 
     /* Projects Section */

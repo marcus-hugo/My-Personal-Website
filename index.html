@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/5032ba6cf5.js" crossorigin="anonymous"></script>
@@ -41,8 +38,8 @@
                     <img class="selfie" src="images/selfie.jpeg" alt="selfie of Marcus outside">
                 </div>
                 <div class="my-words">
-                    <h1>Hi! I'm Marcus, a programmer!</h1>
-                    <p>My focus is on frontend development.</p>
+                    <h1>Hi! I'm Marcus, a <strong>programmer!</strong></h1>
+                    <p>My focus is on <em>frontend development</em>.</p>
                     <p>I enjoy taking a design and building it out
                         with HTML, CSS, and a little JavaScript!
                     </p>
@@ -55,10 +52,17 @@
 
             <div class="header2-wrapper">
                 <h2 class="projects-header">Projects</h2>
-                <h3 class="fem-header">Frontend Mentor Challenges</h3>
+                <h3 class="fem-header"> <em> Frontend Mentor Challenges</em></h3>
             </div>
-
             <div class="project project-one">
+                <img class="screenshot" src="images/tip-calculator-screenshot.png" alt="">
+                <p class="project-p">Tip Calculator App built with HTML, CSS, JavaScript.</p>
+                <div class="links">
+                    <a class="button" href="" target="_blank" rel="noopener noreferrer">Live Site</a>
+                    <a class="button" href="" target="_blank" rel="noopener noreferrer">Code</a>
+                </div>
+            </div>
+            <div class="project project-two">
                 <img class="screenshot" src="images/screenshot-faq-accordion-card.png" alt="">
                 <p class="project-p">Faq Accordion Card built with Flexbox and JavaScript</p>
                 <div class="links">
@@ -69,9 +73,9 @@
                 </div>
             </div>
 
-            <div class="project project-two">
+            <div class="project project-three">
                 <img class="screenshot" src="images/Screenshot-base-apparel.png" alt="">
-                <p class="project-p">Base Apparel Coming Soon built with html, css, flexbox, and grid.</p>
+                <p class="project-p">Base Apparel Coming Soon built with HTML form validation, CSS flexbox and grid.</p>
                 <div class="links">
                     <a class="button" href="https://marcus-hugo.github.io/base-apparel-coming-soon-master/"
                         target="_blank" rel="noopener noreferrer">Live Site</a>
@@ -80,20 +84,9 @@
                 </div>
             </div>
 
-            <div class="project project-three">
-                <img class="screenshot" src="images/screenshot-profile-card-component.png" alt="">
-                <p class="project-p">Profile Card Component built with html, css, and flexbox.</p>
-                <div class="links">
-                    <a class="button" href="https://marcus-hugo.github.io/profile-card-component-main/" target="_blank"
-                        rel="noopener noreferrer">Live Site</a>
-                    <a class="button" href="https://github.com/marcus-hugo/profile-card-component-main" target="_blank"
-                        rel="noopener noreferrer">Code</a>
-                </div>
-            </div>
-
             <div class="project project-four">
                 <img class="screenshot" src="images/screenshot-single-price-grid-component.png" alt="">
-                <p class="project-p">Single Price Grid Component built with html, css, and flexbox.</p>
+                <p class="project-p">Single Price Grid Component built with HTML and CSS flexbox.</p>
                 <div class="links">
                     <a class="button" href="https://marcus-hugo.github.io/single-price-grid-component-master/"
                         target="_blank" rel="noopener noreferrer">Live Site</a>
@@ -111,17 +104,19 @@
 
         <!-- Contact Section -->
         <section id="contact-section" class="contact-section">
-            <h3 class="get-in-touch">Get in Touch</h3>
-            <div class="social-links-container">
-                <a class="social-icons-link" href="https://www.linkedin.com/in/marcus-hugo-27823b32" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a class="social-icons-link" href="https://github.com/marcus-hugo" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
-                <a class="social-icons-link" href="mailto:phantomboss300@yahoo.com"><i
-                        class="fas fa-envelope-square fa-2x"></i></a>
-                <a class="social-icons-link" href="" target="_blank" rel="noopener noreferrer"></a>
+            <div class="get-in-touch-wrapper">
+                <h3 class="get-in-touch">Get in Touch</h3>
+                <div class="social-links-container">
+                    <a class="social-icons-link" href="https://www.linkedin.com/in/marcus-hugo-27823b32" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a class="social-icons-link" href="https://github.com/marcus-hugo" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
+                    <a class="social-icons-link" href="mailto:phantomboss300@yahoo.com"><i
+                            class="fas fa-envelope-square fa-2x"></i></a>
+                    <a class="social-icons-link" href="" target="_blank" rel="noopener noreferrer"></a>
+                </div>
             </div>
-            
+
             <div class="about-site">
                 <div class="about-h3-wrapper">
                     <h3>Focused on these for my site:</h3>
@@ -131,9 +126,9 @@
                     <li>CSS Flexbox</li>
                     <li>CSS Grid</li>
                     <li>Mobile first approach</li>
-                    <li>CSS Animations</li>
+                    <li>CSS Transitions</li>
                 </ul>
-                
+
             </div>
         </section>
     </main>
@@ -142,7 +137,7 @@
 
     <footer>
         <p>Thanks for visiting!</p>
-        <p>© Marcus Hugo 2021</p> 
+        <p>© Marcus Hugo 2021</p>
     </footer>
 </body>
 
