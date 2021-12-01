@@ -1,7 +1,5 @@
+:root {}
 
-:root {
-
-}
 * {
     margin: 0;
     padding: 0;
@@ -9,18 +7,21 @@
 }
 
 html {
-    font-size: 16px; /* 16px = 1rem */
+    font-size: 16px;
+    /* 16px = 1rem */
     scroll-behavior: smooth;
 }
-html, body {
+
+html,
+body {
     overflow-x: hidden;
 }
 
 body {
     text-align: center;
-    color:lavender;
+    color: lavender;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(139,173,223);
+    background-color: rgb(139, 173, 223);
 }
 
 /* Header */
@@ -34,7 +35,10 @@ header {
     box-shadow: 0px 1px 10px black;
 }
 
-/* Navbar */
+/* ------------ */
+/* Navbar       */
+/* ------------ */
+
 .u-list {
     display: flex;
     justify-content: space-evenly;
@@ -45,7 +49,7 @@ header {
     transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.l-item:hover{
+.l-item:hover {
     transform: scale(1.10);
     transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     background: #FEE440;
@@ -72,29 +76,27 @@ header {
     justify-content: space-evenly;
     align-items: center;
     border-radius: 20px;
-    padding: 1rem;
-
     width: 100%;
     height: 400px;
-  
-    background-image: 
-    radial-gradient(5px 5px at 10px 20px, white, transparent),
-    radial-gradient(2px 2px at 50px 370px, white, transparent),
-    radial-gradient(3px 3px at 50px 260px, white, transparent),
-      
-    radial-gradient(2px 2px at 20px 40px, white, transparent),
-    radial-gradient(4px 4px at 80px 45px, white, transparent),
-    radial-gradient(3px 3px at 70px 140px, white, transparent),
-    
-    radial-gradient(2px 2px at 280px 240px, white, transparent),
-    radial-gradient(4px 4px at 290px 260px, white, transparent),
-    radial-gradient(3px 3px at 270px 100px, white, transparent),
-    
-    radial-gradient(2px 2px at 380px 40px, white, transparent),
-    radial-gradient(4px 4px at 390px 60px, white, transparent),
-    radial-gradient(3px 3px at 370px 100px, white, transparent);
-      
-    background-repeat:repeat;
+
+    background-image:
+        radial-gradient(5px 5px at 10px 20px, white, transparent),
+        radial-gradient(2px 2px at 50px 370px, white, transparent),
+        radial-gradient(3px 3px at 50px 260px, white, transparent),
+
+        radial-gradient(2px 2px at 20px 40px, white, transparent),
+        radial-gradient(4px 4px at 80px 45px, white, transparent),
+        radial-gradient(3px 3px at 70px 140px, white, transparent),
+
+        radial-gradient(2px 2px at 280px 240px, white, transparent),
+        radial-gradient(4px 4px at 290px 260px, white, transparent),
+        radial-gradient(3px 3px at 270px 100px, white, transparent),
+
+        radial-gradient(2px 2px at 380px 40px, white, transparent),
+        radial-gradient(4px 4px at 390px 60px, white, transparent),
+        radial-gradient(3px 3px at 370px 100px, white, transparent);
+
+    background-repeat: repeat;
     background-size: 400px 400px;
 
     z-index: 0;
@@ -109,8 +111,8 @@ header {
     background-color: black;
 
     /* grid image */
-    background-image: linear-gradient(90deg, rgba(212,102,229,1) 2px, transparent 0px),
-      linear-gradient(rgba(212,102,229,1) 2px, transparent 1%);
+    background-image: linear-gradient(90deg, rgba(212, 102, 229, 1) 2px, transparent 0px),
+        linear-gradient(rgba(212, 102, 229, 1) 2px, transparent 1%);
     background-size: 50px 50px;
 
     /* perspective for grid */
@@ -118,7 +120,7 @@ header {
 
     position: absolute;
     z-index: 1;
-    top:229px;
+    top: 229px;
 }
 
 .image-wrapper {
@@ -144,13 +146,14 @@ header {
 
 /* Bubble */
 .my-words {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position: relative;
     padding: 1rem;
     z-index: 1;
     border: 2px solid #0CF2DB;
     border-radius: 5px;
 }
+
 /* bubble arrow */
 .my-words::before {
     position: absolute;
@@ -164,10 +167,11 @@ header {
 }
 
 h1 {
-   margin: 2.5rem 1.25rem;
-   font-size: 3rem;
-   transition: all 1s ease-out;
+
+    font-size: 3rem;
+    transition: all 1s ease-out;
 }
+
 h1:hover {
     transform: translate(5px) scale(1.03);
     transition: all 1s ease-in-out;
@@ -183,7 +187,10 @@ p:hover {
     transition: all 1s ease-in-out;
 }
 
+/* ---------------- */
 /* Projects Section */
+/* ---------------- */
+
 .projects-section {
     background: lavender;
     color: black;
@@ -195,14 +202,13 @@ p:hover {
 }
 
 .projects-header {
-    color:;
     padding: 40px 0 20px 0;
     font-size: 4rem;
     letter-spacing: .2rem;
 }
 
 .fem-header {
-    color:;
+    color: ;
     padding: 10px 0 10px 0;
     font-size: 1.2rem;
     font-weight: 300;
@@ -228,7 +234,7 @@ p:hover {
 }
 
 .project-p {
-transition: none;
+    transition: none;
 }
 
 .project-p:hover {
@@ -242,7 +248,7 @@ transition: none;
     height: 1.5rem;
     border: 1px solid;
     border-radius: 5px;
-    background-color:;
+    background-color: ;
     text-decoration: none;
     color: black;
     margin: 0.6rem;
@@ -269,24 +275,31 @@ transition: none;
     transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+/* --------------- */
 /* Contact Section */
+/* --------------- */
+
 .contact-section {
-   height: auto;
-   background-image: linear-gradient(90deg, rgb(212, 102, 229) 2px, transparent), linear-gradient(rgb(212, 102, 229) 2px, transparent);
-   background-size: 50px 50px;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+    height: auto;
+    background-image: linear-gradient(90deg, rgb(212, 102, 229) 2px, transparent), linear-gradient(rgb(212, 102, 229) 2px, transparent);
+    background-size: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
 .get-in-touch-wrapper {
     background-color: black;
     margin: 0 auto;
     border-radius: 0 0 5px 5px;
+    padding: 2rem;
 }
+
 .get-in-touch {
     padding-top: 1.9rem;
     font-size: 3rem;
     margin: 6.25rem 1.25rem 0 1.25rem;
+    border-bottom: 3px solid;
 }
 
 .social-links-container {
@@ -302,11 +315,13 @@ transition: none;
 
 }
 
-.fab, .fas {
+.fab,
+.fas {
     color: lavender;
 }
 
-.fab:hover, .fas:hover {
+.fab:hover,
+.fas:hover {
     transform: scale(1.10);
     transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -321,6 +336,7 @@ transition: none;
     margin: 2rem auto;
     padding: 1rem;
 }
+
 .about-h3-wrapper {
     border-bottom: 2px solid lavender;
     width: 100%;
@@ -331,9 +347,12 @@ transition: none;
     text-align: left;
 }
 
-/* Footer */
+/* -------------- */
+/* Footer         */
+/* -------------- */
+
 footer {
-    background: linear-gradient( transparent, #0CF2DB);
+    background: linear-gradient(transparent, #0CF2DB);
     font-size: 12px;
     padding: 20px;
 }
@@ -344,7 +363,7 @@ footer {
     html {
         font-size: 20px;
     }
-    
+
     .image-wrapper {
         place-self: center;
         margin-right: 5rem;
@@ -411,29 +430,34 @@ footer {
         grid-area: 1/2/2/4;
     }
 
-    .project-one{
-       grid-area: 2/2/3/3;
-       justify-self: center;
+    .project-one {
+        grid-area: 2/2/3/3;
+        justify-self: center;
     }
-    .project-two{
+
+    .project-two {
         grid-area: 2/3/3/4;
         justify-self: center;
         align-self: stretch;
     }
-    .project-three{
+
+    .project-three {
         grid-area: 3/2/4/3;
         justify-self: center;
     }
-    .project-four{
+
+    .project-four {
         grid-area: 3/3/4/4;
         justify-self: center;
         align-self: stretch;
     }
+
     .more-projects {
         grid-area: 4/2/5/4;
         justify-self: center;
-       
+
     }
+
     footer p {
         font-size: .8rem;
     }
