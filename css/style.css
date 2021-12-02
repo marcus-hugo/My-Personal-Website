@@ -201,10 +201,29 @@ p:hover {
     gap: .5rem;
 }
 
+.header2-wrapper {
+    padding: 2rem;
+    background: #0CF2DB;
+    border-radius: 0 0 5px 5px;
+}
+
 .projects-header {
     padding: 40px 0 20px 0;
     font-size: 4rem;
     letter-spacing: .2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.projects-header::after {
+    content: '';
+    height: 15px;
+    position: absolute;
+    width: 100%;
+    background: rgb(212, 102, 229);
+    bottom: 33px;
+    left: 0;
+    z-index: -1;
 }
 
 .fem-header {
