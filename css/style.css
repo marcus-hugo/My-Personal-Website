@@ -167,24 +167,12 @@ header {
 }
 
 h1 {
-
     font-size: 3rem;
-    transition: all 1s ease-out;
 }
 
-h1:hover {
-    transform: translate(5px) scale(1.03);
-    transition: all 1s ease-in-out;
-}
 
 p {
     margin: 1.25rem 1.25rem;
-    transition: all 1s ease-out;
-}
-
-p:hover {
-    transform: translate(-5px) scale(1.03);
-    transition: all 1s ease-in-out;
 }
 
 /* ---------------- */
@@ -231,6 +219,10 @@ p:hover {
     padding: 10px 0 10px 0;
     font-size: 1.2rem;
     font-weight: 300;
+    background: #FEE440;
+    width: auto;
+    display: inline;
+    box-shadow: 5px 4px 0px black;
 }
 
 .project {
@@ -374,6 +366,7 @@ footer {
     background: linear-gradient(transparent, #0CF2DB);
     font-size: 12px;
     padding: 20px;
+    color: black;
 }
 
 /* Desktop Layout */
