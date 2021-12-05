@@ -20,11 +20,11 @@ body {
     text-align: center;
     color: lavender;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(139, 173, 223);
+    background-color: rgba(212, 102, 229, 1);
 }
 
 /* ------------ */
-/* Navbar       */
+/* Header       */
 /* ------------ */
 
 .u-list {
@@ -128,7 +128,9 @@ body {
     padding: 1.5rem;
     background: #0CF2DB;
     box-shadow: 8px 10px;
+    position: fixed;
 }
+
 .nav-open .hamburger {
     transform: rotate(-45deg);
     width: 50px;
@@ -455,13 +457,13 @@ footer {
 
     /* header */
     header {
-        background: linear-gradient(90deg, #0CF2DB, transparent);
+        background: transparent;
         padding-top: 1rem;
         padding-bottom: 1rem;
         position: sticky;
         top: 0px;
         z-index: 2;
-        box-shadow: 0px 1px 10px black;
+        /* box-shadow: 0px 1px 10px black; */
     }
     /* navigation */
     .nav {
