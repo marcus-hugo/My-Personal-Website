@@ -13,7 +13,7 @@ html {
 
 html,
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -21,17 +21,6 @@ body {
     color: lavender;
     font-family: 'Roboto', sans-serif;
     background-color: rgb(139, 173, 223);
-}
-
-/* Header */
-header {
-    /* background: linear-gradient(90deg, #0CF2DB, transparent);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    box-shadow: 0px 1px 10px black; */
 }
 
 /* ------------ */
@@ -203,8 +192,8 @@ header {
 }
 
 .land {
-    width: 200%;
-    height: 400px;
+    width: 73vw;
+    height: 252px;
     margin: 0 auto;
     background-color: black;
 
@@ -214,11 +203,11 @@ header {
     background-size: 50px 50px;
 
     /* perspective for grid */
-    transform: perspective(100px) rotateX(20deg);
+    transform: perspective(100px) rotateX(3deg);
 
     position: absolute;
     z-index: 1;
-    top: 229px;
+    bottom: -363px;
 }
 
 .image-wrapper {
@@ -464,6 +453,43 @@ footer {
         font-size: 20px;
     }
 
+    /* header */
+    header {
+        background: linear-gradient(90deg, #0CF2DB, transparent);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+        box-shadow: 0px 1px 10px black;
+    }
+    /* navigation */
+    .nav {
+       transform: translateX(0);
+       position: static;
+       background: transparent;
+    }
+
+    /* button */
+    .nav-toggle {
+        display: none;
+    }
+
+    .u-list {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2rem;
+        padding-left: .5rem;
+    }
+
+    .l-item {
+        font-size: 1.3rem;
+    }
+
+    /* ------------- */
+    /* About Section */
+    /* ------------- */
+
     .image-wrapper {
         place-self: center;
         margin-right: 5rem;
@@ -474,13 +500,7 @@ footer {
         height: auto;
     }
 
-    /* About Section */
-
-    .u-list {
-        justify-content: flex-start;
-        gap: 2rem;
-        padding-left: .5rem;
-    }
+    
 
     .about-wrapper {
         display: flex;
