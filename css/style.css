@@ -251,6 +251,9 @@ body {
 
 h1 {
     font-size: 3rem;
+    background: -webkit-linear-gradient(rgba(12, 242, 219, 1), rgba(212, 102, 229, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
