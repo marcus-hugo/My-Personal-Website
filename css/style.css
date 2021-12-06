@@ -47,7 +47,7 @@ body {
 .hamburger {
     background: brown;
     height: 10px;
-    width: 100px;
+    width: 70px;
     display: block;
     position: relative;
     transition: all 500ms ease-in-out;
@@ -57,8 +57,8 @@ body {
 .hamburger::before,
 .hamburger::after {
     background: #cd9640;
-    height: 15px;
-    width: 100px;
+    height: 12px;
+    width: 70px;
     content: '';
     position: absolute;
     left: 0;
@@ -155,8 +155,26 @@ body {
 .about-section {
     background: black;
     position: relative;
-    z-index: -1;
     height: 100vh;
+    background-image:
+    radial-gradient(5px 5px at 10px 20px, white, transparent),
+    radial-gradient(2px 2px at 50px 370px, white, transparent),
+    radial-gradient(3px 3px at 50px 260px, white, transparent),
+
+    radial-gradient(2px 2px at 20px 40px, white, transparent),
+    radial-gradient(4px 4px at 80px 45px, white, transparent),
+    radial-gradient(3px 3px at 70px 140px, white, transparent),
+
+    radial-gradient(2px 2px at 280px 240px, white, transparent),
+    radial-gradient(4px 4px at 290px 260px, white, transparent),
+    radial-gradient(3px 3px at 270px 100px, white, transparent),
+
+    radial-gradient(2px 2px at 380px 40px, white, transparent),
+    radial-gradient(4px 4px at 390px 60px, white, transparent),
+    radial-gradient(3px 3px at 370px 100px, white, transparent);
+
+background-repeat: repeat;
+background-size: 400px 400px;
 }
 
 .about-wrapper {
@@ -164,33 +182,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 20px;
-    width: 100%;
-    height: 400px;
-
-    background-image:
-        radial-gradient(5px 5px at 10px 20px, white, transparent),
-        radial-gradient(2px 2px at 50px 370px, white, transparent),
-        radial-gradient(3px 3px at 50px 260px, white, transparent),
-
-        radial-gradient(2px 2px at 20px 40px, white, transparent),
-        radial-gradient(4px 4px at 80px 45px, white, transparent),
-        radial-gradient(3px 3px at 70px 140px, white, transparent),
-
-        radial-gradient(2px 2px at 280px 240px, white, transparent),
-        radial-gradient(4px 4px at 290px 260px, white, transparent),
-        radial-gradient(3px 3px at 270px 100px, white, transparent),
-
-        radial-gradient(2px 2px at 380px 40px, white, transparent),
-        radial-gradient(4px 4px at 390px 60px, white, transparent),
-        radial-gradient(3px 3px at 370px 100px, white, transparent);
-
-    background-repeat: repeat;
-    background-size: 400px 400px;
-
-    z-index: 0;
-    position: relative;
-    top: 65px;
 }
 
 .land {
@@ -495,9 +486,22 @@ footer {
     /* About Section */
     /* ------------- */
 
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+
     .image-wrapper {
-        place-self: center;
-        margin-right: 5rem;
+        padding: 0;
+        margin: 0;
+        margin-right: 35px;
     }
 
     .selfie {
