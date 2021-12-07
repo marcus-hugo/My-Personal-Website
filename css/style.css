@@ -47,7 +47,7 @@ body {
 .hamburger {
     background: brown;
     height: 10px;
-    width: 70px;
+    width: 60px;
     display: block;
     position: relative;
     transition: all 500ms ease-in-out;
@@ -58,7 +58,7 @@ body {
 .hamburger::after {
     background: #cd9640;
     height: 12px;
-    width: 70px;
+    width: 60px;
     content: '';
     position: absolute;
     left: 0;
@@ -66,13 +66,13 @@ body {
 }
 
 .hamburger::before {
-    top: 20px;
+    top: 15px;
     transition: all 500ms ease-in-out;
     border-radius: 0 0 5px 5px;
 }
 
 .hamburger::after {
-    bottom: 20px;
+    bottom: 15px;
     transition: all 500ms ease-in-out;
     border-radius: 5px 5px 0 0;
 }
@@ -140,7 +140,8 @@ body {
 .nav-open .hamburger::before {
     transform: rotate(45deg);
     opacity: 0%;
-    top: 100px;
+    width: 0;
+    height: 0;
 }
 
 .nav-open .hamburger::after {
@@ -151,11 +152,16 @@ body {
     background: rgba(212, 102, 229, 1);
 }
 
+/* ------------- */
 /* About Section */
+/* ------------- */
+
 .about-section {
     background: black;
     position: relative;
     height: 100vh;
+
+    /* starfield */
     background-image:
     radial-gradient(5px 5px at 10px 20px, white, transparent),
     radial-gradient(2px 2px at 50px 370px, white, transparent),
@@ -247,6 +253,12 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+.pg1 {
+    font-size: 1.5rem;
+}
+.pg1 > em {
+    color:rgba(12, 242, 219, 1);
+}
 p {
     margin: 1.25rem 1.25rem;
 }
