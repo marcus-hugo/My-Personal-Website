@@ -1,4 +1,35 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
 
+:root {
+
+    /* ----COLORS---- */
+
+    /* 80's theme */
+    --clr-purple: rgba(212, 102, 229, 1);
+    --clr-green: rgba(12, 242, 219, 1);
+    --clr-yellow: rgb(254, 228, 64);
+
+    /* ? */
+    --clr-lavender: (rgb(230, 230, 250));
+
+    /* hamburger colors */
+    --clr-burger: rgb(165, 42, 42);
+    --clr-buns:  rgb(205, 150, 64);
+
+    /* neutral colors */
+    --clr-light: rgb(255, 255, 255);
+    --clr-med: rgb(128, 128, 128);
+    --clr-dark: rgba(0, 0, 0, 1);
+
+    /* transparent */
+    --clr-clear: transparent;
+}
+
+/* ----------------- */
+/* Reset             */
+/* ----------------- */
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +42,25 @@ html {
     scroll-behavior: smooth;
 }
 
-html,
-body {
-    /* overflow-x: hidden; */
+/* ----------------- */
+/* Utilites          */
+/* ----------------- */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
 }
+
+/* ----------------- */
+/* Genral Styles     */
+/* ----------------- */
 
 body {
     text-align: center;
@@ -453,8 +499,11 @@ footer {
     padding: 20px;
     color: black;
 }
-
+/* -------------- */
+/*                */
 /* Desktop Layout */
+/*                */
+/* -------------- */
 
 @media (min-width: 1024px) {
     html {
@@ -511,7 +560,7 @@ footer {
     }
 
     .image-wrapper {
-        padding: 0;
+        padding: 2rem;
         margin: 0;
         margin-right: 35px;
     }
