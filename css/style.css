@@ -259,7 +259,7 @@ background-size: 400px 400px;
     position: relative;
     z-index: 1;
     margin: 1rem;
-    padding-top: 158px;
+    padding-top: 125px;
 }
 
 .selfie {
@@ -302,9 +302,11 @@ h1 {
 .pg1 {
     font-size: 1.5rem;
 }
+
 .pg1 > em {
     color:rgba(12, 242, 219, 1);
 }
+
 p {
     margin: 1.25rem 1.25rem;
 }
@@ -349,7 +351,6 @@ p {
 }
 
 .fem-header {
-    color: ;
     padding: 10px 0 10px 0;
     font-size: 1.2rem;
     font-weight: 300;
@@ -367,12 +368,17 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+}
+
+.project p {
+    margin: 0;
 }
 
 .screenshot {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 90%;
     margin-top: 1rem;
+    border-radius: 5px;
 }
 
 .project-p {
