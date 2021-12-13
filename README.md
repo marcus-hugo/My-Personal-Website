@@ -1,6 +1,6 @@
 # My Personal Site
 
-Built using most everything I've learned about HTML and CSS, including Flexbox, Grid, responsive layouts, and using REMs.
+Built using most everything I've learned about HTML and CSS, including Flexbox, Grid, responsive layouts, CSS transistions.
 
 ## Future Development
 
