@@ -82,7 +82,7 @@ body {
 .nav-toggle {
     padding: .5rem;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1rem;
     top: 2rem;
     z-index: 1000;
