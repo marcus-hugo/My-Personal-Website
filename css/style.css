@@ -36,7 +36,10 @@
 /* ----------------- */
 /* Reset             */
 /* ----------------- */
-* {
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
@@ -605,11 +608,12 @@ footer {
     padding: 20px;
     color: black;
 }
-/* -------------- */
-/*                */
-/* Desktop Layout */
-/*                */
-/* -------------- */
+/* ---------------- */
+/*                  */
+/*  Desktop Layout  */
+/*                  */
+/* ---------------- */
+        /*  */
 
 @media (min-width: 1024px) {
     html {
@@ -701,8 +705,9 @@ footer {
     }
 
     p {
-        margin: 1.25rem auto;
+        margin: 1.25rem 0;
         font-size: 1.25rem;
+        max-width: 50%;
     }
 
     /* Projects Section */
@@ -759,5 +764,12 @@ footer {
 
     footer p {
         font-size: .8rem;
+    }
+
+    /* About section */
+    .about-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
