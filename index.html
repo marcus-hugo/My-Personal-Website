@@ -18,15 +18,25 @@
 </head>
 
 <body>
-    <header>
+    <header id="home" class="header">
         <button class="nav-toggle">
             <span class="hamburger"></span>
             <span class="sr-only">Toggle navigation</span>
         </button>
+
+        <!-- Toggle button -->
+        <small>Light</small>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <small>Dark</small>
+
+
         <!-- Navagation Bar -->
         <nav class="nav">
             <ul class="u-list">
-                <li class="l-item"><a class="nav-button" href="#intro-section">Home</a></li>
+                <li class="l-item"><a class="nav-button" href="#home">Home</a></li>
                 <li class="l-item"><a class="nav-button" href="#projects-section">Projects</a></li>
                 <li class="l-item"><a class="nav-button" href="#about-section">About Me</a></li>
                 <li class="l-item"><a class="nav-button" href="#contact-section">Contact</a></li>
@@ -57,7 +67,7 @@
 
             <div class="header2-wrapper">
                 <h2 class="projects-header">Projects</h2>
-                <h3 class="fem-header"> <em> Frontend Mentor Challenges</em></h3>
+                <h3 class="fem-header"><em class="em1">Frontend Mentor Challenges</em></h3>
             </div>
 
             <!-- Project One -->
@@ -76,7 +86,7 @@
             <!-- Project Two -->
             <div class="project project-two">
                 <img class="screenshot" src="images/screenshot-faq-accordion-card.png" alt="">
-                <p class="project-p"> <strong>Faq Accordion Card</strong></p>
+                <p class="project-p"><strong>Faq Accordion Card</strong></p>
                 <p>Flexbox and JavaScript</p>
                 <div class="links">
                     <a class="button" href="https://marcus-hugo.github.io/faq-accordion-card-main/" target="_blank"
@@ -121,14 +131,20 @@
 
         <!-- About Section -->
 
-        <section id="about-section">
+        <section id="about-section" class="about-section">
             <div class="header2-wrapper">
                 <h2 class="projects-header">About Me</h2>
-                <h3 class="fem-header"><em>My Journey to Coding</em></h3>     
+                <h3 class="fem-header"><em class="em1">My Journey to Coding</em></h3>     
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint dicta ea est cumque dolore ipsam obcaecati at neque, incidunt, sunt recusandae fugit tempora corporis rem nemo repudiandae itaque veniam eos!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quos fugit, officiis aperiam nisi cumque laudantium placeat ipsa sapiente vel aliquid et, temporibus ex molestias sequi deleniti nesciunt. Doloribus, soluta!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus assumenda voluptates hic labore veniam earum quae exercitationem iure ullam in! Porro doloribus iste vitae debitis praesentium blanditiis architecto. Quibusdam, vel.</p>
+            <div class="about-text-wrapper">
+                <p>
+                    For me coding is <em>the best</em> combination of creative and technical.  There is always new concepts to learn!  The hardest part for me was finding a good mentor and guide to gettting started.  At this time of writing, it will have almost been a year since beginning Dr. Angela Yu's Udemy course <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank"
+                    rel="noopener noreferrer">Complete 2021 Web Developer Bootcamp</a> in January 2021.  Beggining this course gave me so much encouragment and confidence.
+                </p>
+                <p>After learning the basics, I have found and from many sources, say to start building projects.  And it's true!  That's where Frontend Mentor comes in.  It's <em>the</em> best community for learning frontend development!  I'm amazed how far I've come after beginning my first challenge and it was very challenging then!</p>
+                <p></p>
+            </div>
+            
 
         </section>
 
@@ -138,7 +154,7 @@
 
             <div class="header2-wrapper">
                 <h2 class="projects-header">Contact</h2>
-                <h3 class="fem-header"><em>Where to find me</em></h3>
+                <h3 class="fem-header"><em class="em1">Where to find me</em></h3>
             </div>
 
             <div class="social-links-container">

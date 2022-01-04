@@ -25,6 +25,12 @@
 
     /* transparent */
     --clr-clear: transparent;
+
+    /* gradients */
+    --grd-1: linear-gradient(90deg, rgba(12, 242, 219, 1), rgba(212, 102, 229, 1));
+    /* patterns */
+    --ptrn-2: conic-gradient(#fff 0.25turn, #000 0.25turn 0.5turn, #fff 0.5turn 0.75turn, #000 0.75turn)
+    top left / 25% 25% repeat;
 }
 
 /* ----------------- */
@@ -69,10 +75,61 @@ body {
     /* background-color: rgba(212, 102, 229, 1); */
 }
 
+/* ----------- */
+/* Dark themes */
+/* ----------- */
+
+/* body */
+body.dark-theme {
+    color: lavender;
+    background-color: #000;
+}
+.header.dark-theme {
+    background: rgb(41, 41, 41);
+}
+small.dark-theme {
+    color: lavender;
+}
+
+/* projects section */
+.projects-section.dark-theme {
+    color: inherit;
+    background: rgb(37, 53, 52);
+}
+.project.dark-theme {
+    background: rgb(26, 25, 25);
+}
+.button.dark-theme {
+    color: #dad7d7;
+}
+.about-section.dark-theme {
+    background: #1f1f20;
+    color:#dad7d7;
+}
+.em1.dark-theme {
+    color: black;
+}
+.contact-section.dark-theme {
+    background: #1f1f20;
+    color:#dad7d7;
+}
+
+.fab.dark-theme,
+.fas.dark-theme {
+    color: #dad7d7;
+}
+
+
 /* ------------ */
 /* Header       */
 /* ------------ */
 
+header {
+    height: 100px;
+    background-color: #b5b0b0;
+    display: flex;
+    align-items: center;
+}
 .u-list {
     display: flex;
     justify-content: space-evenly;
@@ -197,6 +254,80 @@ body {
     width: 100%;
     background: rgba(212, 102, 229, 1);
 }
+/* ------------ */
+/* Button swich */
+/* ------------ */
+small {
+    color: black;
+}
+
+/* https://www.w3schools.com/howto/howto_css_switch.asp */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+    z-index: 10000;
+  }
+
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background: var(--grd-1);
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background: #302c2c;
+  }
+
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 /* ------------------ */
 /* Intro/Home Section */
@@ -427,14 +558,11 @@ p {
 /* About Section   */
 /* --------------- */
 
-#about-section {
+.about-section {
     color: black;
     background: lavender;
 }
 
-#about-section .header2-wrapper {
-    background: lavender;
-}
 
 /* --------------- */
 /* Contact Section */
@@ -467,21 +595,12 @@ p {
     transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.about-site {
-}
-
-.about-h3-wrapper {
-}
-
-.about-site-ul {
-}
-
 /* -------------- */
 /* Footer         */
 /* -------------- */
 
 footer {
-    background: linear-gradient(transparent, #0CF2DB);
+    background: linear-gradient(35deg,rgb(212, 102, 229), #0CF2DB);
     font-size: 12px;
     padding: 20px;
     color: black;
@@ -499,13 +618,12 @@ footer {
 
     /* header */
     header {
-        background: transparent;
+        background: #f5f5f5;
         padding-top: 1rem;
         padding-bottom: 1rem;
         position: sticky;
         top: 0px;
         z-index: 2;
-        /* box-shadow: 0px 1px 10px black; */
     }
     /* navigation */
     .nav {
