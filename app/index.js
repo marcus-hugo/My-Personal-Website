@@ -24,6 +24,7 @@ const contactSec = document.querySelector('.contact-section');
 const fas = document.querySelectorAll('.fab');
 const fai = document.querySelector('.fas');
 const smalls = document.querySelectorAll('small');
+const checkbox = document.querySelector('input');
 
 btn.addEventListener('click', function() {
     body.classList.toggle('dark-theme');
@@ -51,3 +52,7 @@ btn.addEventListener('click', function() {
     contactSec.classList.toggle('dark-theme');
     // h3dark.classList.toggle('dark-theme');
 })
+
+window.onload = () => {
+    checkbox.checked = false;
+}
