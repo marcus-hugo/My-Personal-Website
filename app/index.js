@@ -25,6 +25,7 @@ const fas = document.querySelectorAll('.fab');
 const fai = document.querySelector('.fas');
 const smalls = document.querySelectorAll('small');
 const checkbox = document.querySelector('input');
+const femlink = document.querySelector('.fem-link');
 
 btn.addEventListener('click', function() {
     body.classList.toggle('dark-theme');
@@ -50,6 +51,7 @@ btn.addEventListener('click', function() {
     fai.classList.toggle('dark-theme');
     aboutSec.classList.toggle('dark-theme');
     contactSec.classList.toggle('dark-theme');
+    femlink.classList.toggle('dark-theme');
     // h3dark.classList.toggle('dark-theme');
 })
 
