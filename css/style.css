@@ -572,6 +572,10 @@ p {
     background: lavender;
 }
 
+.about-text-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
 
 /* --------------- */
 /* Contact Section */
@@ -775,5 +779,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 70%;
     }
 }
