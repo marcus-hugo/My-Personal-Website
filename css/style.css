@@ -13,7 +13,7 @@
 
     /* ? */
     --clr-lavender: (rgb(230, 230, 250));
-
+    --clr-dark-bg: rgb(41, 41, 41);
     /* hamburger colors */
     --clr-burger: rgb(165, 42, 42);
     --clr-buns:  rgb(205, 150, 64);
@@ -79,7 +79,7 @@ body {
 }
 
 /* ----------- */
-/* Dark themes */
+/* Dark theme */
 /* ----------- */
 
 /* body */
@@ -94,11 +94,15 @@ small.dark-theme {
     color: lavender;
 }
 
+.e-links.dark-theme {
+    color: var(--clr-green);
+}
 /* projects section */
 .projects-section.dark-theme {
     color: inherit;
-    background: rgb(37, 53, 52);
+    background: var(--clr-dark-bg);
 }
+
 .project.dark-theme {
     background: rgb(26, 25, 25);
 }
@@ -127,7 +131,7 @@ small.dark-theme {
 /* Header       */
 /* ------------ */
 
-header {
+.header {
     height: 100px;
     background-color: #b5b0b0;
     display: flex;
@@ -217,13 +221,22 @@ header {
 .l-item:hover {
     transform: scale(1.10);
     transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    
+}
+
+.l-item:focus-within {
+    outline: dashed 2px lightgrey;
+    outline-offset: 5px;                
 }
 
 .nav-button {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
+}
+
+a:focus {
+    outline: dashed 2px lightgrey;
+    outline-offset: 5px;
 }
 
 /* nav open */
@@ -480,7 +493,7 @@ p {
     height: 15px;
     position: absolute;
     width: 100%;
-    background: rgb(212, 102, 229);
+    background: rgb(208, 8, 239);
     bottom: 33px;
     left: 0;
     z-index: -1;
@@ -631,7 +644,7 @@ footer {
     }
 
     /* header */
-    header {
+    .header {
         background: #f5f5f5;
         padding-top: 1rem;
         padding-bottom: 1rem;

@@ -1,5 +1,6 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav-button');
+const links = document.querySelectorAll('.e-links');
 
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
@@ -46,6 +47,9 @@ btn.addEventListener('click', function() {
     }
     for (let small of smalls) {
         small.classList.toggle('dark-theme');
+    }
+    for (let link of links) {
+        link.classList.toggle('dark-theme');
     }
 
     fai.classList.toggle('dark-theme');
