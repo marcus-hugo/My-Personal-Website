@@ -25,13 +25,14 @@
         </button>
 
         <!-- Toggle button -->
-        <small>Light</small>
-        <label class="switch">
-            <input aria-label="dark-mode" type="checkbox">
-            <span class="slider round"></span>
-        </label>
-        <small>Dark</small>
-
+        <div class="toggle-button-wrapper">
+            <small>Light</small>
+            <label class="switch">
+                <input aria-label="dark-mode" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <small>Dark</small>
+        </div>
 
         <!-- Navagation Bar -->
         <nav class="nav">
@@ -53,10 +54,10 @@
                     <img class="selfie" src="images/selfie.jpeg" alt="selfie of Marcus outside">
                 </div>
                 <div class="my-words">
-                    <h1>Hi! I'm Marcus, a <strong>programmer!</strong></h1>
+                    <h1>Hi! I'm Marcus, a self-taught Programmer!</h1>
                     <p class="pg1">My focus is on <em>frontend development</em>.</p>
                     <p class="pg2">I enjoy taking a design and building it out
-                        with HTML, CSS, and vanilla JavaScript!
+                        with HTML, CSS, and JavaScript!
                     </p>
                 </div>
             </div>
@@ -76,9 +77,11 @@
                 <p class="project-p"><strong>Social Media Dashboard with Theme Switcher</strong></p>
                 <p>Checkbox toggle for dark theme and OS prefers color scheme</p>
                 <div class="links">
-                    <a class="button" href="https://marcus-hugo.github.io/social-media-dashboard-with-theme-switcher-master/"
+                    <a class="button"
+                        href="https://marcus-hugo.github.io/social-media-dashboard-with-theme-switcher-master/"
                         target="_blank" rel="noopener noreferrer">Live Site</a>
-                    <a class="button" href="https://github.com/marcus-hugo/social-media-dashboard-with-theme-switcher-master"
+                    <a class="button"
+                        href="https://github.com/marcus-hugo/social-media-dashboard-with-theme-switcher-master"
                         target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
             </div>
@@ -120,7 +123,7 @@
                         target="_blank" rel="noopener noreferrer">Code</a>
                 </div>
             </div>
-            
+
             <!-- More Projects -->
             <div class="project more-projects">
                 <a class="fem-link" href="https://www.frontendmentor.io/profile/marcus-hugo" target="_blank"
@@ -134,19 +137,34 @@
         <section id="about-section" class="about-section">
             <div class="header2-wrapper">
                 <h2 class="projects-header">About Me</h2>
-                <h3 class="fem-header"><em class="em1">My Journey to Coding</em></h3>     
+                <h3 class="fem-header"><em class="em1">My Coding Journey</em></h3>
             </div>
             <div class="about-text-wrapper">
 
-                <p>For me, coding, is <em>the best</em> combination of creative and technical.  There is always new concepts to learn!  The hardest part for me was finding a good mentor and guide to gettting started.  At this time of writing, it has been a year since beginning Dr. Angela Yu's Udemy course <a class="e-links" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank"
-                rel="noopener noreferrer">Complete 2021 Web Developer Bootcamp</a> in January 2021.  Taking this course has givin me so much encouragment and confidence!</p>
+                <p>My first introduction to Programming was in highschool. I wanted to try something different other
+                    than art. Didn't go so well. Though, I've always been curious as to how things work, which has
+                    always stuck with me. Later in my College years, I remember discovering the browser inspector tool
+                    wondering what all that code was! I was interested in learning to code, but, I couldn't find a good
+                    guide.</p>
 
-                <p>After learning the basics, I've found and from many sources say to start building projects.  And it's true!  That's where Frontend Mentor comes in.  It's <em>the best</em> community for learning frontend development!  I have learned so much with each challenge and with the help from the community.  I'm amazed how far I've come after beginning my first challenge and it was very challenging then!  All of the things I'm learning are being applied to my portfolio site.</p>
+                <p>Fast foward many years, I built my own PC, later studied for the A+, then learned to use the command
+                    line, that led me back to web development. It was the connection of writing HTML and CSS and
+                    visually seeing the <em>immediate</em> <strong>output</strong> that had me hooked!</p>
+                <!-- <p>For me, coding, is <em>the best</em> combination of creative and technical.  There is always new concepts to learn!  The hardest part for me was finding a good mentor and guide to gettting started.  At this time of writing, it has been a year since beginning Dr. Angela Yu's Udemy course <a class="e-links" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank"
+                rel="noopener noreferrer">Complete 2021 Web Developer Bootcamp</a> in January 2021.  Taking this course has givin me so much encouragment and confidence!</p> -->
 
-                <p></p>
+                <p>After learning the basics, many sources say to start building projects. And it's true! That's where
+                    Frontend Mentor comes in. It's <em>the best</em> community for learning frontend development! I have
+                    learned so much with each challenge and help from the community. I'm amazed at how far I've come
+                    along after beginning my first challenge and it was <em>very </em>challenging then!</p>
+
+                <p>I'm currently learning a modular front-end workflow with Webpack. It's really awesome! You can spin
+                    up a local development server, bundle assets, use PostCSS, and much more.  I've been building other
+                    projects from Scrimba and my own side projects too.  My next goal is to get a job as a Front-end
+                    Developer.</p>
 
             </div>
-            
+
 
         </section>
 
@@ -156,7 +174,7 @@
 
             <div class="header2-wrapper">
                 <h2 class="projects-header">Contact</h2>
-                <h3 class="fem-header"><em class="em1">Where to find me</em></h3>
+                <h3 class="fem-header"><em class="em1">Let's Connect!</em></h3>
             </div>
 
             <div class="social-links-container">
@@ -184,29 +202,150 @@
                 </a>
             </div>
 
-            <div class="about-site">
+            <!-- Knowledge and Skills -->
+            <div class="my-skills">
+                <h3>My Knowledge and Skills</h3>
 
-                <h3>Focused on these for my site:</h3>
-
-                <ul class="about-site-ul">
-                    <li>Semantic HTML</li>
-                    <li>Mobile first approach</li>
-                    <li>CSS Flexbox</li>
-                    <li>CSS Grid</li>
-                    <li>CSS Transitions</li>
-                </ul>
-
+                <div class="ul-lists-wrapper">
+                    <!-- HTML -->
+                    <div class="ul-wrapper">
+                        <h4>HTML</h4>
+                        <ul class="html-list">
+                            <li>
+                                <p>
+                                    <span class="highlight">Semantic HTML 5</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- CSS -->
+                    <div class="ul-wrapper">
+                        <h4>CSS</h4>
+                        <ul class="html-list">
+                            <li class="me">
+                                <p>
+                                    <span class="highlight">Sass</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="highlight">BEM</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span class="highlight">PostCSS</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Javascript -->
+                    <div class="ul-wrapper">
+                        <h4>JavaScript</h4>
+                        <ul class="html-list">
+                            <li>
+                                <p><span class="highlight">Vanilla Javascript</span></p>
+                            </li>
+                            <li>
+                                <p><span class="highlight">Modular Javascript</span></p>
+                            </li>
+                            <li>
+                                <p><span class="highlight">Jquery</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Design & UX/UI -->
+                    <div class="ul-wrapper">
+                        <h4>Design & UX/UI</h4>
+                        <ul class="html-list">
+                            <li>
+                                <p><span class="highlight" class="highlight">Figma</span></p>
+                            </li>
+                            <li>
+                                <p><span class="highlight" class="highlight">Mobile first approach</span></p>
+                            </li>
+                            <li>
+                                <p><span class="highlight" class="highlight">Responsive design</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Dev tools, technologies -->
+                    <div class="ul-wrapper">
+                        <h4>Development tools & technologies</h4>
+                        <ul class="html-list">
+                            <li>
+                                <p><span class="highlight">Webpack</span></p>
+                            </li>
+                            <li>
+                                <p><span class="highlight">Gulp</span></p>
+                            </li>
+                            <li>
+                                <p><span class="highlight">VS Code</span></p>
+                            </li>
+                            <li>
+                                <p><span class="highlight">Chrome dev tools</span></p>
+                            </li>
+                            <li>
+                                <p><span class="highlight">Firefox dev tools</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
         </section>
-
     </main>
 
     <!-- Footer -->
 
     <footer>
-        <p>Thanks for visiting!</p>
-        <p>© Marcus Hugo 2021</p>
+        <div class="about-site">
+            <p class="about-site-text"><span class="highlight">Highlights</span> of what I've practiced and built for my site</p>
+            <div class="ul-lists-wrapper">
+                <div class="ul-wrapper">
+                    <h4>HTML</h4>
+                    <ul class="html-list">
+                        <li>Semantic HTML 5</li>
+                    </ul>
+                </div>
+
+                <div class="ul-wrapper">
+                    <h4>CSS</h4>
+                    <ul class="html-list">
+                        <li>Starfield</li>
+                        <li>Speech bubble</li>
+                        <li>Hamburger menu</li>
+                        <li>Linear-gradient text</li>
+                        <li>Decorative pseudo elements</li>
+                    </ul>
+                </div>
+
+                <div class="ul-wrapper">
+                    <h4>JavaScript</h4>
+                    <ul class="html-list">
+                        <li>Click events</li>
+                        <li>For each loop</li>
+                        <li>Window on load</li>
+                    </ul>
+                </div>
+
+                <div class="ul-wrapper">
+                    <h4>Design & UX/UI</h4>
+                    <ul class="html-list">
+                        <li>Mobile first approach</li>
+                        <li>Responsive design</li>
+                        <li>Dark/Light Mode</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <p class="footer-text-thank-you"><em>Thanks for visiting!</em></p>
+        <div class="footer-text-wrapper">
+            <p class="footer-text-madewith">Made with &#x1F497 in Collierville, Tennessee.</p>
+            <p class="footer-text-copyright">© Marcus Hugo 2022</p>
+        </div>
+        
+          
     </footer>
     <script src="app/index.js"></script>
 </body>
