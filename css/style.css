@@ -82,6 +82,10 @@ em {
     font-weight: 300;
 }
 
+ul {
+    list-style: none;
+}
+
 /* ----------- */
 /* Dark theme */
 /* ----------- */
@@ -440,7 +444,7 @@ a:focus {
 .my-words {
     background-color: rgba(0, 0, 0, 0.7);
     position: relative;
-    padding: 1rem 0;
+    padding: 1rem .5rem;
     z-index: 1;
     border: 2px solid #0CF2DB;
     border-radius: 5px;
@@ -714,6 +718,10 @@ p {
 
 .ul-lists-wrapper {
     padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 /* -------------- */
